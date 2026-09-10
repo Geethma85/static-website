@@ -3,40 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signup page</title>
+    <title>Sign Up - Codacs</title>
     <link rel="stylesheet" href="signup.css">
 </head>
-
 <body>
-    <div class="main_container">
-        <div class="left">
-            <img src="./CA2.png" alt="Logo" height="40px" class="logo">
-            <p>Become a coder</p>
-            <p>unlock your future with just one click!</p>
-        </div>
+    <main class="main_container">
+        <section class="left">
+            <a href="index.html" class="logo-link">
+                <img src="./CA2.png" alt="Logo" height="40" class="logo">
+                <span>CodeAcs</span>
+            </a>
+            <h2>Join Our Coding Community</h2>
+            <p>Unlock practical coding skills, earn verified certificates, and build real projects.</p>
+        </section>
 
-        <div class="right">
+        <section class="right">
             <form class="formd">
-                <label class="words" for="uname">User name:</label><br>
-                <input type="text" id="uname" name="uname"><br><br>
+                <h3 class="form-title">Create Account</h3>
+                <div class="input-group">
+                    <label class="words" for="uname">Username</label>
+                    <input type="text" id="uname" name="uname" placeholder="Choose a username" required>
+                </div>
         
-                <label class="words" for="pword">Password:</label><br>
-                <input type="password" id="pword" name="pword"><br><br>
+                <div class="input-group">
+                    <label class="words" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
 
-                <label class="words" for="email">Email:</label><br>
-                <input type="password" id="email" name="email"><br><br>
+                <div class="input-group">
+                    <label class="words" for="pword">Password</label>
+                    <input type="password" id="pword" name="pword" placeholder="Create a password" required>
+                </div>
         
-                <button type="button" class="signup" onclick="window.location.href='index.html'">Sign Up</button>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agree" name="agree" value="yes" required>
+                    <label for="agree">I agree to the terms and conditions</label>
+                </div>
 
-                <br><br>
-
-                <input type="checkbox" id="agree" name="agree" value="yes">
-                <label for="agree" class="words">I agree to the terms and conditions</label><br><br>
-
+                <button type="button" class="signin" onclick="window.location.href='index.html'">Sign Up</button>
+                <p class="switch-link">Already have an account? <a href="signin.html">Log In</a></p>
             </form>
-        </div>
-    </div>
-    
+        </section>
+    </main>
 </body>
-
 </html>
