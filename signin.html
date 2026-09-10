@@ -1,36 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signup page</title>
+    <title>Sign In - Codacs</title>
     <link rel="stylesheet" href="signin.css">
 </head>
-
 <body>
-    <div class="main_container">
-        <div class="left">
-            <img src="./CA2.png" alt="Logo" height="40px" class="logo">
-            <p>Join our coding community</p>
-            <p>Your adventure in learning starts here!</p>
-        </div>
+    <main class="main_container">
+        <section class="left">
+            <a href="index.html" class="logo-link">
+                <img src="./CA2.png" alt="Logo" height="40" class="logo">
+                <span>CodeAcs</span>
+            </a>
+            <h2>Welcome Back!</h2>
+            <p>Your learning adventure is waiting right where you left off.</p>
+        </section>
 
-        <div class="right">
+        <section class="right">
             <form class="formd">
-                <label class="words" for="uname">User name:</label><br>
-                <input type="text" id="uname" name="uname"><br><br>
+                <h3 class="form-title">Log In</h3>
+                <div class="input-group">
+                    <label class="words" for="uname">Username</label>
+                    <input type="text" id="uname" name="uname" placeholder="Enter username" required>
+                </div>
         
-                <label class="words" for="pword">Password:</label><br>
-                <input type="password" id="pword" name="pword"><br><br>
+                <div class="input-group">
+                    <label class="words" for="pword">Password</label>
+                    <input type="password" id="pword" name="pword" placeholder="Enter password" required>
+                </div>
         
                 <button type="button" class="signin" onclick="window.location.href='index.html'">Log In</button>
-
-                <br>
+                <p class="switch-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
             </form>
-        </div>
-    </div>
-    
+        </section>
+    </main>
 </body>
-
 </html>
